@@ -1,0 +1,26 @@
+{
+  "name": "serverless-plugin-powertools",
+  "version": "0.1.0",
+  "description": "Serverless plugin adding several variable tools, resolvers, and commands",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ttps://github.com/whardier/serverless-plugin-powertools"
+  },
+  "keywords": [
+    "serverless",
+    "serverless",
+    "applications",
+    "aws",
+    "gcp",
+    "azure",
+    "lambda",
+    "functions",
+    "serverless.com"
+  ],
+  "author": "Shane R. Spencer <spencersr@gmail.com>",
+  "license": "MIT"
+}
