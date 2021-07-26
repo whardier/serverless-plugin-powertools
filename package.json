@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ttps://github.com/whardier/serverless-plugin-powertools"
+    "url": "https://github.com/whardier/serverless-plugin-powertools"
   },
   "keywords": [
     "serverless",
