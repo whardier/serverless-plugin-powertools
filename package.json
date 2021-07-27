@@ -4,7 +4,8 @@
   "description": "Serverless plugin adding several variable tools, resolvers, and commands",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha ./tests/ --recursive",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -12,8 +13,6 @@
   },
   "keywords": [
     "serverless",
-    "serverless",
-    "applications",
     "aws",
     "gcp",
     "azure",
@@ -22,5 +21,41 @@
     "serverless.com"
   ],
   "author": "Shane R. Spencer <spencersr@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "serverless": ">=2.52.1"
+  },
+  "devDependencies": {
+    "@serverless/eslint-config": "^3.0.0",
+    "chai": "^4.3.4",
+    "eslint": "^7.31.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-prettier": "^3.4.0",
+    "mocha": "^9.0.3",
+    "prettier": "^2.3.2",
+    "serverless": "^2.52.1"
+  },
+  "dependencies": {
+    "type": "^2.5.0"
+  },
+  "eslintConfig": {
+    "extends": "@serverless/eslint-config/node",
+    "root": true,
+    "overrides": [
+      {
+        "files": [
+          "test/fixtures/**"
+        ],
+        "rules": {
+          "no-console": "off"
+        }
+      }
+    ]
+  },
+  "eslintIgnore": [
+    "!/.github",
+    "/lib/plugins/create/templates/**",
+    "/lib/plugins/aws/customResources/node_modules/**",
+    "!/test/fixtures/programmatic/locallyInstalledServerless/node_modules/**"
+  ]
 }
