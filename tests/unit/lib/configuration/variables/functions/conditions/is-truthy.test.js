@@ -8,7 +8,7 @@ const {
   isTruthy,
 } = require('../../../../../../../lib/configuration/variables/functions/conditions');
 
-describe('tests/unit/lib/configuration/variables/functions/conditions/is-truthy.js', () => {
+describe('tests/unit/lib/configuration/variables/functions/conditions/is-truthy.test.js', () => {
   let configuration;
   let variablesMeta;
   before(async () => {
