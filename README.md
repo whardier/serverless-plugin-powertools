@@ -1,9 +1,32 @@
 # serverless-plugin-powertools
 
-## Short and sweet
+## Variable Resolvers
+
+For good use cases check out `tests/unit/lib/configuration/variables`.
+
+Current list of provided resolvers:
+
+- `castToBool`
+- `castToInteger`
+- `castToString`
+- `castToBoolOrContinue`
+- `castToIntegerOrContinue`
+- `castToStringOrContinue`
+- `negateBool`
+- `negateBoolOrContinue`
+- `isTruthy`
+- `isFalsy`
+
+## To what end?
 
 Currently this plugin exposes the following variable resolvers that offer type casting, boolean operations, and
 conditional continuations.
+
+You can use them to ensure that external values from the environment, CloudFormation outputs, and external parameter
+stores are cast to the appropriate value. One important use case is defining bucket sizes through the environment or an
+external parameter that should ideally be an integer once rendered.
+
+Simple conditional rendering support is provided through `isTruthy` and `isFalsy`.
 
 Example:
 
