@@ -1,6 +1,6 @@
 {
   "name": "serverless-plugin-powertools",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Serverless plugin adding several variable tools, resolvers, and commands",
   "main": "lib/index.js",
   "scripts": {
